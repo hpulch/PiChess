@@ -13,15 +13,17 @@ board = chess.Board()
 game = True
 while game:
     print(board)
+    if board.is_game_over():
+        print("Game Over!")
+        result = board.result()
+        print("Result:", result)  # Print the result of the game
+        break
 
     try:
         print("White to play, please enter a move using the UCI protocol.")
         user_input = input("Move: ")
         move = chess.Move.from_uci(user_input)
         if move in board.legal_moves:
-            if len(board.legal_moves) < 1:
-                print("Game over")
-                break
             board.push(move) 
         else:
             print("Illegal move, try again")
