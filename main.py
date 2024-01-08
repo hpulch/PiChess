@@ -1,4 +1,3 @@
-# pulchihd@raspberrypi:~ $ sudo apt-get install python3-opencv
 # pulchihd@raspberrypi:~ $ pip install chess
 # pulchihd@raspberrypi:~ $ sudo apt-get install stockfish
 # pulchihd@raspberrypi:~ $ which stockfish
