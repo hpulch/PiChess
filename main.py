@@ -1,17 +1,22 @@
 # pulchihd@raspberrypi:~ $ sudo apt-get install python3-opencv
 # pulchihd@raspberrypi:~ $ pip install chess
 # pulchihd@raspberrypi:~ $ sudo apt-get install stockfish
+# pulchihd@raspberrypi:~ $ which stockfish
+
+
 import cv2 as cv
 import chess
 import chess.engine
 
-# pulchihd@raspberrypi:~ $ which stockfish
+# connect the python-chess board to stockfish
 path = '/usr/games/stockfish'
-engine = chess.engine.SimpleEngine.popen_uci(path)
+stockfish = chess.engine.SimpleEngine.popen_uci(path)
 
+
+#Initialize the game
 board = chess.Board()
-game = True
-while game:
+playing = True
+while playing:
     print(board)
     if board.is_game_over():
         print("Game Over!")
