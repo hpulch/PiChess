@@ -1,4 +1,4 @@
-# sample-code
+# schematic
 
 ![Schematic](https://github.com/hpulch/PiChess/assets/8972875/487ec52e-212f-498e-89a4-7a90b27fe8d9)
 
